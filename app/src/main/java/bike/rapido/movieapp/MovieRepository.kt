@@ -11,7 +11,7 @@ object MovieRepository {
     private val api:Api
     init {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.themoviedb.org/3")
+            .baseUrl("https://api.themoviedb.org/3/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         api = retrofit.create(Api::class.java)
